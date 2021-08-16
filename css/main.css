@@ -1,0 +1,40 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    background: radial-gradient(#04ff04, #0c820c);
+    cursor: pointer;
+}
+.eye-box{
+    display: flex;
+}
+.eye-box .eye{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    display: block;
+    background: #ffffff;
+    margin: 0 20px;
+    border-radius: 50%;
+    box-shadow: 0 5px 45px rgba(0, 0, 0, 0.2),
+    inset 0 0 15px #0c820c,
+    inset 0 0 25px #0c820c;
+}
+.eye-box .eye::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 35px;
+    transform: translate(-50%,-50%);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #000000;
+    border: 10px solid #933b00;
+    box-sizing: border-box;
+}
